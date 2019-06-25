@@ -6,9 +6,7 @@ class App extends React.Component {
         super(props);
 
         this.state = { latitude: null, errorMessage: '' };
-    }
 
-    render() {
         navigator.geolocation.getCurrentPosition(
             pos => {
                 this.setState({ latitude: pos.coords.latitude });
@@ -16,15 +14,20 @@ class App extends React.Component {
             err =>{
                 this.setState({ errorMessage: err.message });
                 // console.log(err.message);
-            } 
-    );
-        return (
-        <div>
-            Lattitude: {this.state.latitude}
-            <br />
-            Error: {this.state.errorMessage}
-        </div>
-        )
+            }
+        );
+    }
+       
+    render() {
+        if (this.state.errorMessage && !this.state.latitude) {
+            return <div>Error: {this.state.errorMessage}</div>;
+        }
+        
+        if (!this.state.errorMessage && this.state.latitude) {
+            return <div>Latitude: {this.state.latitude}</div>;
+        }
+
+        return <div>Loading!</div>;
     }
 }
 
