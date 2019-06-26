@@ -14,17 +14,17 @@ class App extends React.Component {
         );
     }
 
-renderContent() {
-    if (this.state.errorMessage && !this.state.latitude) {
-        return <div>Error: {this.state.errorMessage}</div>;
-    }
-    
-    if (!this.state.errorMessage && this.state.latitude) {
-        return <SeasonsDisplay latitude={this.state.latitude} />;
-    }
+    renderContent() {
+        if (this.state.errorMessage && !this.state.latitude) {
+            return <div>Error: {this.state.errorMessage}</div>;
+        }
+        
+        if (!this.state.errorMessage && this.state.latitude) {
+            return <SeasonsDisplay latitude={this.state.latitude} />;
+        }
 
-    return  <LoadSpinner message='Please accept the location request'/>;
-}
+        return  <LoadSpinner message='Please accept the location request'/>;
+    }
 
     render() {
         return (
