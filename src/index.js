@@ -29,7 +29,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="border">
-                {this.renderContent()};
+                {this.renderContent()}
             </div>
         );
     }
