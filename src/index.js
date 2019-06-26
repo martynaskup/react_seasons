@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import SeasonsDisplay from './SeasonDisplay';
 import LoadSpinner from './LoadSpinner';
 import './index.css';
+import ErrorMessage from './ErrorMessage';
 
 class App extends React.Component {
     state = { latitude: null, errorMessage: '' };
@@ -10,13 +11,13 @@ class App extends React.Component {
     componentDidMount() {
         navigator.geolocation.getCurrentPosition(
             pos => this.setState({ latitude: pos.coords.latitude }),
-            err => this.setState({ errorMessage: err.message })
+            err => this.setState({ errorMessage: err.message})
         );
     }
 
     renderContent() {
         if (this.state.errorMessage && !this.state.latitude) {
-            return <div>Error: {this.state.errorMessage}</div>;
+            return <ErrorMessage errorMessage={this.state.errorMessage}/>
         }
         
         if (!this.state.errorMessage && this.state.latitude) {

@@ -1,0 +1,8 @@
+.err-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    background: darkgray;
+    text-align: center;
+}
