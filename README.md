@@ -1,4 +1,5 @@
 # seasons
+
 This app has been created to practice the react components and state used in the components.
 It gets the current location of the user and the current month and display the season with a message based on the location and current month.
 
