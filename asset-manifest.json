@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react_seasons/static/css/main.3b4acd10.chunk.css",
-    "main.js": "/react_seasons/static/js/main.6b2b8bfd.chunk.js",
-    "main.js.map": "/react_seasons/static/js/main.6b2b8bfd.chunk.js.map",
+    "main.css": "/react_seasons/static/css/main.1db03b43.chunk.css",
+    "main.js": "/react_seasons/static/js/main.ec860c42.chunk.js",
+    "main.js.map": "/react_seasons/static/js/main.ec860c42.chunk.js.map",
     "runtime~main.js": "/react_seasons/static/js/runtime~main.da08049d.js",
     "runtime~main.js.map": "/react_seasons/static/js/runtime~main.da08049d.js.map",
     "static/js/2.2050718e.chunk.js": "/react_seasons/static/js/2.2050718e.chunk.js",
     "static/js/2.2050718e.chunk.js.map": "/react_seasons/static/js/2.2050718e.chunk.js.map",
     "index.html": "/react_seasons/index.html",
-    "precache-manifest.28dd5c9e4209ba5cfaa261829ba06394.js": "/react_seasons/precache-manifest.28dd5c9e4209ba5cfaa261829ba06394.js",
+    "precache-manifest.8e228badd945365ef02b5bb080776917.js": "/react_seasons/precache-manifest.8e228badd945365ef02b5bb080776917.js",
     "service-worker.js": "/react_seasons/service-worker.js",
-    "static/css/main.3b4acd10.chunk.css.map": "/react_seasons/static/css/main.3b4acd10.chunk.css.map"
+    "static/css/main.1db03b43.chunk.css.map": "/react_seasons/static/css/main.1db03b43.chunk.css.map"
   }
 }
