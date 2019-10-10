@@ -1,3 +1,6 @@
+body {
+  overflow: hidden;
+}
 .border {
   border: 2vh lightgrey ridge;
   height: 100vh;
