@@ -1,7 +1,7 @@
 {
   "name": "react_seasons",
   "version": "0.1.0",
-  "homepage": "https://snikerslala.github.io/react_seasons/",
+  "homepage": "https://martynaskup.github.io/react_seasons/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
